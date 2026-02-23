@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Marketiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/Cart.css">
+    <link rel="stylesheet" href="../Styles/Footer.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Marke<span>tiva</span></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=khaledmohammedoosh@gmail.com">Contact</a>
+                </li>
+                <div id="auth-links" class="auth-links">
+
+                </div>
+            </ul>
+            <a href="Cart.html" class="cart-link active">
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <main class="cart-page-container">
+        <div class="back-link">
+            <a href="Home.html"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+        </div>
+
+        <section class="cart-content">
+            <div class="cart-items-section" id="cart-items-list">
+
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Your cart is empty.</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section" id="cart-summary">
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal-price">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shipping-price">Free</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total-price">$0.00</span>
+                    </div>
+                    <button class="buy-now-btn" id="buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="order-success-overlay" class="overlay">
+        <div class="success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Shipped!</h2>
+            <p>Thank you for shopping with Marketiva. Your order is on its way.</p>
+            <button onclick="window.location.href='Home.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i> 01156819576</li>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:khaledmohammedoosh@gmail.com">khaledmohammedoosh@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Minya - Matai - Thawra Street</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/khaled.m.shehata.2025?locale=ar_AR" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/KhaledMo7amed9" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=khaledmohammedoosh@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Marketiva. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Scripts/Models.js"></script>
+    <script src="../Scripts/Common.js"></script>
+    <script src="../Scripts/Cart.js"></script>
+</body>
+
+</html>
