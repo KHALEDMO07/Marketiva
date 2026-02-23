@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
         new Product(11, "Wool Sweater", "Clothes", 65.00, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80", "Warm and comfortable wool sweater."),
         new Product(12, "Silk Shirt", "Clothes", 75.00, "https://images.unsplash.com/photo-1603400521630-9f2de124b33b?auto=format&fit=crop&w=800&q=80", "Elegant silk shirt for formal occasions."),
 
-        // Makeup
-        new Product(5, "Matte Foundation", "Makeup", 34.99, "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=800&q=80", "Smooth matte foundation for a flawless look."),
-        new Product(8, "Eyeshadow Palette", "Makeup", 42.00, "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80", "12-shade eyeshadow palette with matte and shimmer finishes."),
+        // PCs
+        new Product(5, "Gaming Desktop", "PCs", 1499.99, "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=80", "High-performance gaming desktop with RGB lighting."),
+        new Product(8, "Ultra Laptop", "PCs", 1299.00, "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80", "Slim and powerful laptop for professionals on the go."),
 
 
         // Phones
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         new Product(18, "ASUS Zenfone 9", "Phones", 599.00, "https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&w=800&q=80", "The best small phone with big performance.")
     ];
 
-    const CURRENT_CATALOG_VERSION = 4;
+    const CURRENT_CATALOG_VERSION = 5;
     const storedProducts = JSON.parse(localStorage.getItem("products"));
     const storedVersion = localStorage.getItem("catalog_version");
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotsContainer = document.getElementById("dots-container");
     const sliderItems = [
         { title: "New Season Arrived", subtitle: "Check out our latest clothes collection", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" },
-        { title: "Glow Up With Us", subtitle: "Exclusive makeup products just for you", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" },
+        { title: "Next-Gen Computing", subtitle: "Explore our powerful range of PCs", image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=80" },
         { title: "Tech Revolution", subtitle: "Get the latest smartphones today", image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" }
     ];
 
