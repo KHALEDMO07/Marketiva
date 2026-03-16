@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!selectedProduct) {
-        window.location.href = "Home.html";
+        window.location.href = "index.html";
         return;
     }
 

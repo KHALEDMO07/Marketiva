@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("currentUser", JSON.stringify(user));
             showMessage("success", "Login Successfully");
             setTimeout(() => {
-                window.location.href = "../Pages/Home.html";
+                window.location.href = "../Pages/index.html";
             }, 1500);
         } else {
             showMessage("error", "Invalid Email or Password");
